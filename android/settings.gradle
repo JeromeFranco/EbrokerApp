@@ -1,0 +1,3 @@
+rootProject.name = 'EbrokerApp'
+
+include ':app'
