@@ -1,11 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import styles from './App.style';
-import LaunchScreen from './containers/LaunchScreen';
+import styles from './app.style';
+import LaunchScreen from './containers/launch-screen';
 
-interface Props {}
-
-function App(props: Props) {
+function App() {
   return (
     <View style={styles.container}>
       <LaunchScreen />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Platform } from 'react-native';
-import styles from './index.style';
-import HelloWorld from '../../components/HelloWorld';
+import styles from './launch-screen.style';
+import HelloWorld from '../../components/hello-world';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -10,7 +10,9 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-interface Props {}
+interface Props {
+  nothing?: undefined;
+}
 
 function LaunchScreen(props: Props) {
   return (
