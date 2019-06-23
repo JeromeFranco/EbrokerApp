@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import styles from './app.style';
+import styles from './app1.style';
 import LaunchScreen from './containers/launch-screen';
 
 function App() {

@@ -5,7 +5,8 @@
     "plugin:react/recommended",
     "plugin:react-native/all",
     "standard",
-    "plugin:prettier/recommended"
+    "prettier",
+    "prettier/standard"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -13,7 +14,7 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "react", "react-native"],
+  "plugins": ["@typescript-eslint", "react", "react-native", "prettier"],
   "settings": {
     "react": {
       "pragma": "React",
@@ -34,6 +35,7 @@
     "it": false
   },
   "rules": {
+    "prettier/prettier": "error",
     "no-unused-vars": 0,
     "no-undef": 0,
     "semi": 0,
