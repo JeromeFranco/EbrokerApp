@@ -10,6 +10,7 @@ const mapStateToProps = (state: RootState) => ({
 const dispatchProps = {
   addTodo: todosActions.addTodo,
   removeTodo: todosActions.removeTodo,
+  fetchTodos: todosActions.fetchTodosRequest,
 };
 
 export type TodoScreenConnectProps = ReturnType<typeof mapStateToProps> & typeof dispatchProps;

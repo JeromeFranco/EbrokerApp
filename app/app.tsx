@@ -3,10 +3,13 @@ import { View } from 'react-native';
 import { Provider } from 'react-redux';
 import styles from './app.style';
 import LaunchScreen from './containers/launch-screen';
-import createStore from './state/create-store';
 import TodoScreen from './containers/todo-screen';
+import createStore from './utils/create-store';
+import rootReducer from './state';
+import rootSaga from './sagas';
 
-const store = createStore();
+
+const store = createStore(rootReducer, rootSaga);
 
 function App() {
   return (
