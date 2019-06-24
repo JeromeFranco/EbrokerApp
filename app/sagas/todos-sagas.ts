@@ -1,7 +1,6 @@
 import { put, call } from 'redux-saga/effects';
 import axios, { AxiosResponse } from 'axios';
 import { Todo, todosActions } from '../state/todos';
-import { RequestResult } from '../utils/interfaces/request-result';
 
 export function* fetchTodosSaga() {
   try {
